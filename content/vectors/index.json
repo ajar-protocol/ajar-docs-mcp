@@ -1,0 +1,1606 @@
+[
+  {
+    "id": "mandate-ticket-signing",
+    "kind": "crypto-signing",
+    "source_file": "test-vectors/crypto-signing.json",
+    "spec_section": "",
+    "vector": {
+      "artifact": "examples/scenario-tickets/mandate.json",
+      "artifact_type": "mandate",
+      "canonical_sha256": "1c4c64c191c848ba64495c53c5fc28f1e868a320688d3c6d9ba53895406db0d4",
+      "canonical_utf8": "{\"ajar_version\":\"0.1\",\"caps\":{\"count\":1,\"per_tx\":{\"INR\":200000},\"total\":{\"INR\":200000}},\"constraints\":{\"domains_allow\":[\"examplerail.example\",\"*.examplerail.example\"],\"forbidden\":[\"commerce.cancel.*\"],\"risk_max\":\"R3\"},\"delegation\":{\"chain\":[],\"sub_delegation\":false},\"id\":\"urn:uuid:11111111-1111-4111-8111-111111111111\",\"issuer\":{\"key\":{\"crv\":\"Ed25519\",\"kid\":\"principal-2026\",\"kty\":\"OKP\",\"x\":\"principalBuyerPublicKey001\"},\"kind\":\"principal\"},\"revocation\":{\"cached_ttl\":\"PT10M\",\"endpoint\":\"https://principal.example/ajar/revocations\"},\"scopes\":[\"commerce.purchase.transport\",\"content.read.*\"],\"subject\":{\"key\":{\"crv\":\"Ed25519\",\"kid\":\"agent-2026\",\"kty\":\"OKP\",\"x\":\"agentOperatorPublicKey001\"},\"kind\":\"agent\",\"operator\":\"https://agent.example\"},\"type\":\"mandate\",\"valid_from\":\"2026-07-01T00:00:00Z\",\"valid_until\":\"2026-07-31T23:59:59Z\"}",
+      "id": "mandate-ticket-signing",
+      "public_key_b64url": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc",
+      "seed_hex": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "signature_b64url": "SmysHbzmCXGrNrFXCT1GX52bxTCchcNZ-tvhfOjVC4hKssKxltDDq42zSSySxRE8w_pxKdD-2k7mmmm6Z4zQCw"
+    }
+  },
+  {
+    "id": "manifest-check-blog-valid",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "valid": true
+      },
+      "id": "manifest-check-blog-valid",
+      "manifest": "examples/manifests/blog-core.json",
+      "served_path": "/.well-known/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-check-commerce-valid",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "valid": true
+      },
+      "id": "manifest-check-commerce-valid",
+      "manifest": "examples/manifests/commerce-core-act-pay.json",
+      "served_path": "/.well-known/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-check-expired-invalid",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "contains": "AJAR-VERIFY-EXPIRED",
+        "valid": false
+      },
+      "id": "manifest-check-expired-invalid",
+      "manifest": "examples/invalid/expired-manifest/manifest.json",
+      "served_path": "/.well-known/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-check-lifetime-over-180d-invalid",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "contains": "AJAR-VERIFY-EXPIRED",
+        "valid": false
+      },
+      "id": "manifest-check-lifetime-over-180d-invalid",
+      "manifest": "examples/invalid/manifest-lifetime-over-180d/manifest.json",
+      "served_path": "/.well-known/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-check-risk-floor-invalid",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "contains": "two_phase",
+        "valid": false
+      },
+      "id": "manifest-check-risk-floor-invalid",
+      "manifest": "examples/invalid/risk-floor/manifest.json",
+      "served_path": "/.well-known/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-check-wrong-served-path",
+    "kind": "manifest-check-vectors",
+    "source_file": "test-vectors/manifest-check-vectors.json",
+    "spec_section": "",
+    "vector": {
+      "expected": {
+        "contains": "AJAR-MANIFEST-LOCATION",
+        "valid": false
+      },
+      "id": "manifest-check-wrong-served-path",
+      "manifest": "examples/manifests/blog-core.json",
+      "served_path": "/ajar.json"
+    }
+  },
+  {
+    "id": "manifest-commerce-signing",
+    "kind": "crypto-signing",
+    "source_file": "test-vectors/crypto-signing.json",
+    "spec_section": "",
+    "vector": {
+      "artifact": "examples/manifests/commerce-core-act-pay.json",
+      "artifact_type": "manifest",
+      "canonical_sha256": "a4113771a95219691a22cc3ce6c00d7ec3992612c7fafc1b77793a34c3e4d14b",
+      "canonical_utf8": "{\"actions\":[{\"effects\":[],\"endpoint\":\"/ajar/actions/search_routes\",\"execution\":\"direct\",\"id\":\"search_routes\",\"idempotency\":\"none\",\"input_schema\":{\"additionalProperties\":false,\"properties\":{\"date\":{\"format\":\"date\",\"type\":\"string\"},\"from\":{\"type\":\"string\"},\"to\":{\"type\":\"string\"}},\"required\":[\"from\",\"to\",\"date\"],\"type\":\"object\"},\"output_schema\":{\"properties\":{\"routes\":{\"type\":\"array\"}},\"required\":[\"routes\"],\"type\":\"object\"},\"pricing\":{\"per_call\":\"0\",\"settlement_on_commit\":false},\"requires\":{\"tier\":\"anonymous\"},\"risk\":\"R0\",\"simulate\":false,\"title\":\"Search train routes\",\"transport\":\"ajar-http\"},{\"effects\":[{\"currency\":\"INR\",\"max\":\"computed\",\"type\":\"financial.charge\"},{\"resource\":\"booking\",\"reversible_until\":\"P2D\",\"type\":\"resource.create\"}],\"endpoint\":\"/ajar/actions/purchase_tickets\",\"execution\":\"two_phase\",\"id\":\"purchase_tickets\",\"idempotency\":\"required\",\"input_schema\":{\"additionalProperties\":false,\"properties\":{\"passengers\":{\"maximum\":50,\"minimum\":1,\"type\":\"integer\"},\"route_id\":{\"type\":\"string\"},\"travel_class\":{\"enum\":[\"sleeper\",\"chair\",\"business\"],\"type\":\"string\"}},\"required\":[\"route_id\",\"passengers\",\"travel_class\"],\"type\":\"object\"},\"output_schema\":{\"properties\":{\"booking_id\":{\"type\":\"string\"},\"tickets\":{\"type\":\"integer\"}},\"required\":[\"booking_id\",\"tickets\"],\"type\":\"object\"},\"preconditions\":[\"seat_availability\"],\"pricing\":{\"per_call\":\"0\",\"settlement_on_commit\":true},\"requires\":{\"mandate_scopes\":[\"commerce.purchase.transport\"],\"tier\":\"verified\"},\"risk\":\"R3\",\"simulate\":true,\"title\":\"Purchase train tickets\",\"transport\":\"ajar-http\"}],\"ajar_version\":\"0.1\",\"expires_at\":\"2026-10-01T00:00:00Z\",\"issued_at\":\"2026-07-02T00:00:00Z\",\"keys\":{\"operational\":[{\"certification\":{\"alg\":\"Ed25519\",\"kid\":\"owner-2026\",\"sig\":\"certRailContentSigner001\"},\"key\":{\"crv\":\"Ed25519\",\"kid\":\"content-2026-07\",\"kty\":\"OKP\",\"x\":\"opsRailContentPublicKey001\"},\"scope\":[\"content-signing\"],\"valid_until\":\"2026-10-01T00:00:00Z\"},{\"certification\":{\"alg\":\"Ed25519\",\"kid\":\"owner-2026\",\"sig\":\"certRailOfferSigner001\"},\"key\":{\"crv\":\"Ed25519\",\"kid\":\"offer-2026-07\",\"kty\":\"OKP\",\"x\":\"opsRailOfferPublicKey001\"},\"scope\":[\"offer-signing\",\"receipt-signing\"],\"valid_until\":\"2026-10-01T00:00:00Z\"}],\"owner\":{\"crv\":\"Ed25519\",\"kid\":\"owner-2026\",\"kty\":\"OKP\",\"x\":\"ownerRailPublicKeyExample001\"}},\"metering\":{\"currency\":\"INR\",\"endpoint_402\":true,\"read\":{\"anonymous\":\"0\",\"signed\":\"0\"},\"settlement\":[\"x402\",\"ap2-card\",\"offline-invoice\"]},\"policy_summary\":{\"audience_tiers\":[\"anonymous\",\"signed\",\"verified\",\"contracted\"],\"rate_limits\":{\"anonymous\":\"60/h\",\"contracted\":\"12000/h\",\"signed\":\"600/h\",\"verified\":\"3000/h\"},\"requires_mandate_from_risk\":\"R2\"},\"profiles\":[\"CORE\",\"ACT\",\"PAY\"],\"sequence\":42,\"site\":{\"contact\":\"agents@examplerail.example\",\"description\":\"Intercity train ticketing with signed views and owner-approved actions.\",\"domain\":\"examplerail.example\",\"languages\":[\"en\",\"hi\"],\"legal_entity\":\"ExampleRail Pvt Ltd\",\"name\":\"ExampleRail\"},\"supported_versions\":[\"0.1\"],\"views\":{\"chunking\":{\"diff\":\"etag-per-chunk\",\"stable_ids\":true},\"index\":\"/ajar/views/index\",\"license\":{\"read\":\"allowed\",\"terms\":\"/ajar/license\",\"train\":\"denied\"},\"negotiation\":[\"application/ajar+json\",\"text/markdown\"]}}",
+      "id": "manifest-commerce-signing",
+      "public_key_b64url": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg",
+      "seed_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "signature_b64url": "tgb0-mblveVnZ9SonOHvCmKPsaxzupkQ00l9wwod-VZjGSnDjqbi7UjcNUV6T0QoiyTx9msoBefgBig_YJXWDg"
+    }
+  },
+  {
+    "id": "offer-ticket-signing",
+    "kind": "crypto-signing",
+    "source_file": "test-vectors/crypto-signing.json",
+    "spec_section": "",
+    "vector": {
+      "artifact": "examples/scenario-tickets/offer.json",
+      "artifact_type": "offer",
+      "canonical_sha256": "21283880cad159b5cde9194d6206e0625b7ca938ee30ef95128d695c554d149f",
+      "canonical_utf8": "{\"action_id\":\"purchase_tickets\",\"ajar_version\":\"0.1\",\"expires_at\":\"2026-07-20T10:10:00Z\",\"input_hash\":\"sha256:ticketInputHash001\",\"issued_at\":\"2026-07-20T10:00:00Z\",\"offer_id\":\"urn:uuid:22222222-2222-4222-8222-222222222222\",\"resolved_effects\":[{\"amount\":\"175000\",\"currency\":\"INR\",\"type\":\"financial.charge\"},{\"resource\":\"booking\",\"reversible_until\":\"P2D\",\"type\":\"resource.create\"}],\"single_use\":true,\"total_cost\":{\"amount\":\"175000\",\"currency\":\"INR\"},\"type\":\"offer\"}",
+      "id": "offer-ticket-signing",
+      "public_key_b64url": "JUO5L_EJVRFHatyDadtt3JM2ZaEZeN2hQE7hBmypVZ0",
+      "seed_hex": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+      "signature_b64url": "JxqIuUE8oAKHT44Kh8500yq9Jn2IFhzifut29kCSRmrY8k8hYIOQUHHRpT-wfuRyYoDKXDRpSQkAcA1vaTXGCw"
+    }
+  },
+  {
+    "id": "receipt-ticket-signing",
+    "kind": "crypto-signing",
+    "source_file": "test-vectors/crypto-signing.json",
+    "spec_section": "",
+    "vector": {
+      "artifact": "examples/scenario-tickets/receipt.json",
+      "artifact_type": "receipt",
+      "canonical_sha256": "14af625a44649d9a971c5c661e87e751f9e286f3a03d8e2362bcf44733f55a07",
+      "canonical_utf8": "{\"ajar_version\":\"0.1\",\"executed_at\":\"2026-07-20T10:03:00Z\",\"mandate_hash\":\"sha256:mandateTicketHash001\",\"offer\":{\"action_id\":\"purchase_tickets\",\"ajar_version\":\"0.1\",\"expires_at\":\"2026-07-20T10:10:00Z\",\"input_hash\":\"sha256:ticketInputHash001\",\"issued_at\":\"2026-07-20T10:00:00Z\",\"offer_id\":\"urn:uuid:22222222-2222-4222-8222-222222222222\",\"resolved_effects\":[{\"amount\":\"175000\",\"currency\":\"INR\",\"type\":\"financial.charge\"},{\"resource\":\"booking\",\"reversible_until\":\"P2D\",\"type\":\"resource.create\"}],\"signature\":{\"alg\":\"Ed25519\",\"kid\":\"offer-2026-07\",\"sig\":\"offerTicketScenarioSignature001\"},\"single_use\":true,\"total_cost\":{\"amount\":\"175000\",\"currency\":\"INR\"},\"type\":\"offer\"},\"receipt_id\":\"urn:uuid:33333333-3333-4333-8333-333333333333\",\"result_summary\":{\"message\":\"50 tickets purchased for route NDLS-BCT-2026-07-20-12952.\",\"resource_ids\":[\"booking-ER-20260720-0001\"],\"status\":\"succeeded\"},\"type\":\"receipt\"}",
+      "id": "receipt-ticket-signing",
+      "public_key_b64url": "F0VTtFbd38aQjsqxwQH-arIeK6oGF3lbfUOmNIKZP9U",
+      "seed_hex": "606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+      "signature_b64url": "YBXDgS0xD4BLuC2GGZ1PcfxjVpLLuwhjeXJWW61tbLk8EmsdmMgyrtn4r5wra-Mj7nnvKSxDtfcMVdbmHAsvCA"
+    }
+  },
+  {
+    "id": "must-extensibility-unknown-fields",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "1",
+    "vector": {
+      "id": "must-extensibility-unknown-fields",
+      "section": "1",
+      "source_text": "4. **Extensibility:** every object carries `ajar_version` (semver); unknown fields MUST be ignored per the extension policy in §13; breaking changes bump major version; clients negotiate via the manifest's `supported_versions`.",
+      "vectors": [
+        "extension-manifest-x-field-accepted",
+        "extension-manifest-unprefixed-field-rejected"
+      ]
+    }
+  },
+  {
+    "id": "must-idempotency-header",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "10",
+    "vector": {
+      "follow_up": "Only manifest shape/risk-floor validation is vectored; HTTP idempotency behavior needs harness coverage.",
+      "id": "must-idempotency-header",
+      "section": "10",
+      "source_text": "| Idempotency | `Idempotency-Key: <uuid>` (R1+ MUST) |",
+      "vectors": [
+        "manifest-act-pay-valid",
+        "action-risk-floor-lowered"
+      ]
+    }
+  },
+  {
+    "id": "breaking-change-major-bump",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "breaking-change-major-bump",
+      "input": {
+        "change": "breaking",
+        "new_version": "1.0",
+        "old_version": "0.1"
+      },
+      "kind": "version_change",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "breaking-change-without-major-bump",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERSION-BREAKING",
+        "verdict": "reject"
+      },
+      "id": "breaking-change-without-major-bump",
+      "input": {
+        "change": "breaking",
+        "new_version": "0.2",
+        "old_version": "0.1"
+      },
+      "kind": "version_change",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "extension-action-x-field-accepted",
+    "kind": "extension-vectors",
+    "source_file": "test-vectors/extension-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "add": [
+        {
+          "path": "/actions/0/x-demo-ui-hint",
+          "value": "display as compact search action"
+        }
+      ],
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "extension-action-x-field-accepted",
+      "input": "examples/manifests/commerce-core-act-pay.json",
+      "schema": "manifest.schema.json",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "extension-manifest-unprefixed-field-rejected",
+    "kind": "extension-vectors",
+    "source_file": "test-vectors/extension-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "add": [
+        {
+          "path": "/demo_note",
+          "value": "unprefixed unknown field"
+        }
+      ],
+      "expected": {
+        "verdict": "reject"
+      },
+      "id": "extension-manifest-unprefixed-field-rejected",
+      "input": "examples/manifests/blog-core.json",
+      "schema": "manifest.schema.json",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "extension-manifest-x-field-accepted",
+    "kind": "extension-vectors",
+    "source_file": "test-vectors/extension-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "add": [
+        {
+          "path": "/x-demo-note",
+          "value": "private extension fields are ignored by generic clients"
+        }
+      ],
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "extension-manifest-x-field-accepted",
+      "input": "examples/manifests/blog-core.json",
+      "schema": "manifest.schema.json",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "extension-offer-unprefixed-field-rejected",
+    "kind": "extension-vectors",
+    "source_file": "test-vectors/extension-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "add": [
+        {
+          "path": "/settlement_note",
+          "value": {
+            "rail": "offline-invoice"
+          }
+        }
+      ],
+      "expected": {
+        "verdict": "reject"
+      },
+      "id": "extension-offer-unprefixed-field-rejected",
+      "input": "examples/scenario-tickets/offer.json",
+      "schema": "offer.schema.json",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "extension-offer-x-field-accepted",
+    "kind": "extension-vectors",
+    "source_file": "test-vectors/extension-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "add": [
+        {
+          "path": "/x-demo-settlement-note",
+          "value": {
+            "rail": "offline-invoice"
+          }
+        }
+      ],
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "extension-offer-x-field-accepted",
+      "input": "examples/scenario-tickets/offer.json",
+      "schema": "offer.schema.json",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "must-breaking-major-version",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "13",
+    "vector": {
+      "id": "must-breaking-major-version",
+      "section": "13",
+      "source_text": "- Breaking changes MUST bump the major version and include a migration note.",
+      "vectors": [
+        "breaking-change-major-bump",
+        "breaking-change-without-major-bump"
+      ]
+    }
+  },
+  {
+    "id": "must-private-extension-prefix",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "13",
+    "vector": {
+      "id": "must-private-extension-prefix",
+      "section": "13",
+      "source_text": "- Private extension fields and settlement adapters MUST use `x-<vendor>-` prefixes. Private scopes MUST use `x-<vendor>.` prefixes because `.` is the scope segment separator.",
+      "vectors": [
+        "extension-action-x-field-accepted",
+        "extension-offer-x-field-accepted",
+        "scope-private-matches-private",
+        "scope-private-does-not-match-core"
+      ]
+    }
+  },
+  {
+    "id": "must-public-extension-aep",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "13",
+    "vector": {
+      "id": "must-public-extension-aep",
+      "section": "13",
+      "source_text": "- Public extensions that affect interoperability MUST go through the AEP process.",
+      "vectors": [
+        "public-extension-with-aep",
+        "public-extension-without-aep"
+      ]
+    }
+  },
+  {
+    "id": "must-unknown-fields",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "13",
+    "vector": {
+      "id": "must-unknown-fields",
+      "section": "13",
+      "source_text": "- Unknown fields MUST be ignored unless they appear in an object position where the schema has `additionalProperties: false`.",
+      "vectors": [
+        "extension-manifest-x-field-accepted",
+        "extension-manifest-unprefixed-field-rejected"
+      ]
+    }
+  },
+  {
+    "id": "public-extension-with-aep",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "public-extension-with-aep",
+      "input": {
+        "aep_present": true,
+        "affects_interoperability": true
+      },
+      "kind": "aep_requirement",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "public-extension-without-aep",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "13",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-AEP-REQUIRED",
+        "verdict": "reject"
+      },
+      "id": "public-extension-without-aep",
+      "input": {
+        "aep_present": false,
+        "affects_interoperability": true
+      },
+      "kind": "aep_requirement",
+      "spec_section": "13"
+    }
+  },
+  {
+    "id": "http-manifest-well-known-location",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.1",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "http-manifest-well-known-location",
+      "input": {
+        "method": "GET",
+        "path": "/.well-known/ajar.json",
+        "serves_manifest": true
+      },
+      "kind": "http_surface",
+      "spec_section": "2.1"
+    }
+  },
+  {
+    "id": "http-manifest-wrong-location",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-MANIFEST-LOCATION",
+        "verdict": "reject"
+      },
+      "id": "http-manifest-wrong-location",
+      "input": {
+        "method": "GET",
+        "path": "/ajar.json",
+        "serves_manifest": true
+      },
+      "kind": "http_surface",
+      "spec_section": "2.1"
+    }
+  },
+  {
+    "id": "must-manifest-location",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "2.1",
+    "vector": {
+      "id": "must-manifest-location",
+      "section": "2.1",
+      "source_text": "A conforming site MUST serve its manifest at:",
+      "vectors": [
+        "http-manifest-well-known-location",
+        "http-manifest-wrong-location"
+      ]
+    }
+  },
+  {
+    "id": "manifest-domain-binding-mismatch",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.2",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERIFY-DOMAIN-BINDING",
+        "verdict": "reject"
+      },
+      "id": "manifest-domain-binding-mismatch",
+      "input": {
+        "manifest_domain": "examplerail.example",
+        "owner_key_present": true,
+        "proof": "dns-txt",
+        "request_domain": "attacker.example"
+      },
+      "kind": "domain_binding",
+      "spec_section": "2.2"
+    }
+  },
+  {
+    "id": "manifest-domain-binding-valid",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.2",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "manifest-domain-binding-valid",
+      "input": {
+        "manifest_domain": "examplerail.example",
+        "owner_key_present": true,
+        "proof": "dns-txt",
+        "request_domain": "examplerail.example"
+      },
+      "kind": "domain_binding",
+      "spec_section": "2.2"
+    }
+  },
+  {
+    "id": "must-owner-key-domain-binding",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "2.2",
+    "vector": {
+      "id": "must-owner-key-domain-binding",
+      "section": "2.2",
+      "source_text": "- The **Owner Key** (Ed25519) is the site's root of authority. Its public half appears in the manifest AND MUST be provable against the domain via at least one of: DNS TXT record (`_ajar.<domain>`), or the TLS-served manifest itself plus transparency-log history (trust-on-first-use hardened by logs).",
+      "vectors": [
+        "manifest-domain-binding-valid",
+        "manifest-domain-binding-mismatch"
+      ]
+    }
+  },
+  {
+    "id": "agent-request-signature-tampered-target",
+    "kind": "http-signature-vectors",
+    "source_file": "test-vectors/http-signature-vectors.json",
+    "spec_section": "2.3",
+    "vector": {
+      "covered": [
+        "@method",
+        "@target-uri",
+        "signature-agent",
+        "ajar-date"
+      ],
+      "created": 1784532000,
+      "expected": {
+        "error_code": "AJAR-VERIFY-BAD-SIGNATURE",
+        "verdict": "reject"
+      },
+      "id": "agent-request-signature-tampered-target",
+      "keyid": "agent-2026",
+      "mutate": {
+        "target_uri": "https://examplerail.example/ajar.json"
+      },
+      "public_key_b64url": "zRSzf5VulTGU_3-3Oz2B3MVh1hp1OAlLfD4aZD7l86o",
+      "request": "test-vectors/http-request.json",
+      "signature_b64url": "ZsuyBEnbynlJotKfDIixMI4mUF6Xhl1uxbwglP8Ak3dZNgWEy9fBdOPFKQPn92_rPDvvBWBh3_RNtbl-64zIAg",
+      "spec_section": "2.3"
+    }
+  },
+  {
+    "id": "agent-request-signature-valid",
+    "kind": "http-signature-vectors",
+    "source_file": "test-vectors/http-signature-vectors.json",
+    "spec_section": "2.3",
+    "vector": {
+      "covered": [
+        "@method",
+        "@target-uri",
+        "signature-agent",
+        "ajar-date"
+      ],
+      "created": 1784532000,
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "agent-request-signature-valid",
+      "keyid": "agent-2026",
+      "public_key_b64url": "zRSzf5VulTGU_3-3Oz2B3MVh1hp1OAlLfD4aZD7l86o",
+      "request": "test-vectors/http-request.json",
+      "seed_hex": "808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9f",
+      "signature": "ajar=:ZsuyBEnbynlJotKfDIixMI4mUF6Xhl1uxbwglP8Ak3dZNgWEy9fBdOPFKQPn92_rPDvvBWBh3_RNtbl-64zIAg:",
+      "signature_b64url": "ZsuyBEnbynlJotKfDIixMI4mUF6Xhl1uxbwglP8Ak3dZNgWEy9fBdOPFKQPn92_rPDvvBWBh3_RNtbl-64zIAg",
+      "signature_base": "\"@method\": GET\n\"@target-uri\": https://examplerail.example/.well-known/ajar.json\n\"signature-agent\": https://agent.example/.well-known/http-message-signatures-directory\n\"ajar-date\": 2026-07-20T10:00:00Z\n\"@signature-params\": (\"@method\" \"@target-uri\" \"signature-agent\" \"ajar-date\");created=1784532000;keyid=\"agent-2026\";tag=\"ajar\";alg=\"ed25519\"",
+      "signature_input": "ajar=(\"@method\" \"@target-uri\" \"signature-agent\" \"ajar-date\");created=1784532000;keyid=\"agent-2026\";tag=\"ajar\";alg=\"ed25519\"",
+      "spec_section": "2.3"
+    }
+  },
+  {
+    "id": "must-agent-http-signatures",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "2.3",
+    "vector": {
+      "follow_up": "Freshness-window rejection needs an implementation-facing HTTP harness.",
+      "id": "must-agent-http-signatures",
+      "section": "2.3",
+      "source_text": "Agents MUST sign requests with HTTP Message Signatures (RFC 9421, `tag=\"ajar\"`), interoperable with Web Bot Auth: `Signature-Agent` points to the operator's key directory (`/.well-known/http-message-signatures-directory`). `Ajar-Date` is an RFC 3339 request timestamp; it MUST be included in the signature base; receivers MUST reject requests older than the freshness window they advertise. Anonymous access is at the owner's policy discretion (tier `anonymous`).",
+      "vectors": [
+        "agent-request-signature-valid",
+        "agent-request-signature-tampered-target"
+      ]
+    }
+  },
+  {
+    "id": "manifest-bad-signature-shape",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "2.4",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-SCHEMA-INVALID",
+        "verdict": "reject"
+      },
+      "id": "manifest-bad-signature-shape",
+      "input": "../examples/invalid/bad-signature/manifest.json",
+      "profile": "CORE",
+      "rule": "schema-fail",
+      "schema": "manifest.schema.json",
+      "spec_section": "2.4"
+    }
+  },
+  {
+    "id": "must-kid-resolution",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "2.4",
+    "vector": {
+      "id": "must-kid-resolution",
+      "section": "2.4",
+      "source_text": "5. Store the signer key id in `kid`. Verifiers MUST resolve `kid` from the relevant owner, operational, principal, or agent key directory before accepting the signature.",
+      "vectors": [
+        "signature-kid-known",
+        "signature-kid-unknown"
+      ]
+    }
+  },
+  {
+    "id": "signature-kid-known",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.4",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "signature-kid-known",
+      "input": {
+        "kid": "owner-2026",
+        "known_kids": [
+          "owner-2026",
+          "content-2026-07"
+        ]
+      },
+      "kind": "kid_resolution",
+      "spec_section": "2.4"
+    }
+  },
+  {
+    "id": "signature-kid-unknown",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "2.4",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERIFY-UNKNOWN-KID",
+        "verdict": "reject"
+      },
+      "id": "signature-kid-unknown",
+      "input": {
+        "kid": "unknown-2026",
+        "known_kids": [
+          "owner-2026",
+          "content-2026-07"
+        ]
+      },
+      "kind": "kid_resolution",
+      "spec_section": "2.4"
+    }
+  },
+  {
+    "id": "manifest-act-pay-valid",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "3",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "manifest-act-pay-valid",
+      "input": "../examples/manifests/commerce-core-act-pay.json",
+      "profile": "ACT",
+      "schema": "manifest.schema.json",
+      "spec_section": "3"
+    }
+  },
+  {
+    "id": "manifest-core-valid",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "3",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "manifest-core-valid",
+      "input": "../examples/manifests/blog-core.json",
+      "profile": "CORE",
+      "schema": "manifest.schema.json",
+      "spec_section": "3"
+    }
+  },
+  {
+    "id": "manifest-lifetime-over-180d",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "3",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERIFY-EXPIRED",
+        "verdict": "reject"
+      },
+      "id": "manifest-lifetime-over-180d",
+      "input": "../examples/invalid/manifest-lifetime-over-180d/manifest.json",
+      "profile": "CORE",
+      "rule": "manifest-lifetime-over-180d",
+      "schema": "manifest.schema.json",
+      "spec_section": "3"
+    }
+  },
+  {
+    "id": "manifest-sequence-rollback",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "3",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERIFY-ROLLBACK",
+        "verdict": "reject"
+      },
+      "id": "manifest-sequence-rollback",
+      "input": "../examples/invalid/sequence-rollback/current-manifest.json",
+      "profile": "CORE",
+      "rule": "manifest-sequence-rollback",
+      "schema": "manifest.schema.json",
+      "spec_section": "3",
+      "state": {
+        "last_seen_sequence": 42
+      }
+    }
+  },
+  {
+    "id": "must-manifest-expiry",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "3",
+    "vector": {
+      "id": "must-manifest-expiry",
+      "section": "3",
+      "source_text": "\"expires_at\": \"2026-10-01T00:00:00Z\",               // manifests MUST expire (max 180d)",
+      "vectors": [
+        "manifest-check-expired-invalid",
+        "manifest-check-lifetime-over-180d-invalid"
+      ]
+    }
+  },
+  {
+    "id": "must-manifest-lifetime-cap",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "3",
+    "vector": {
+      "id": "must-manifest-lifetime-cap",
+      "section": "3",
+      "source_text": "Manifest lifetime is capped at 180 days. Verifiers MUST reject manifests whose `expires_at` is more than 180 days after `issued_at`.",
+      "vectors": [
+        "manifest-check-lifetime-over-180d-invalid",
+        "manifest-lifetime-over-180d"
+      ]
+    }
+  },
+  {
+    "id": "must-view-provenance",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "4",
+    "vector": {
+      "id": "must-view-provenance",
+      "section": "4",
+      "source_text": "- **Provenance:** every chunk is data, never instructions. Clients MUST tag chunks with origin and treat them as inert in model context (see 04-SECURITY-MODEL).",
+      "vectors": [
+        "view-chunks-provenance-tagged",
+        "view-chunk-executable-rejected"
+      ]
+    }
+  },
+  {
+    "id": "view-chunk-executable-rejected",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "4",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-CLIENT-PROVENANCE",
+        "verdict": "reject"
+      },
+      "id": "view-chunk-executable-rejected",
+      "input": {
+        "chunks": [
+          {
+            "id": "home.title",
+            "inert": true,
+            "origin": "https://notes.example"
+          },
+          {
+            "id": "home.summary",
+            "inert": false,
+            "origin": "https://notes.example"
+          }
+        ],
+        "origin": "https://notes.example",
+        "view": "examples/views/blog-home.view.json"
+      },
+      "kind": "view_provenance",
+      "spec_section": "4"
+    }
+  },
+  {
+    "id": "view-chunks-provenance-tagged",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "4",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "view-chunks-provenance-tagged",
+      "input": {
+        "chunks": [
+          {
+            "id": "home.title",
+            "inert": true,
+            "origin": "https://notes.example"
+          },
+          {
+            "id": "home.summary",
+            "inert": true,
+            "origin": "https://notes.example"
+          }
+        ],
+        "origin": "https://notes.example",
+        "view": "examples/views/blog-home.view.json"
+      },
+      "kind": "view_provenance",
+      "spec_section": "4"
+    }
+  },
+  {
+    "id": "must-r1-idempotency-key",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "5",
+    "vector": {
+      "id": "must-r1-idempotency-key",
+      "section": "5",
+      "source_text": "\"idempotency\": \"required\",                      // Idempotency-Key header, R1+ MUST",
+      "vectors": [
+        "manifest-act-pay-valid",
+        "action-risk-floor-lowered"
+      ]
+    }
+  },
+  {
+    "id": "must-r1-simulate-flag",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "5",
+    "vector": {
+      "id": "must-r1-simulate-flag",
+      "section": "5",
+      "source_text": "\"simulate\": true,                               // MUST be true for R1+ (§6)",
+      "vectors": [
+        "manifest-act-pay-valid",
+        "action-risk-floor-lowered"
+      ]
+    }
+  },
+  {
+    "id": "action-risk-floor-lowered",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "5.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-ACTION-RISK-FLOOR",
+        "verdict": "reject"
+      },
+      "id": "action-risk-floor-lowered",
+      "input": "../examples/invalid/risk-floor/manifest.json",
+      "profile": "ACT",
+      "rule": "schema-fail",
+      "schema": "manifest.schema.json",
+      "spec_section": "5.1"
+    }
+  },
+  {
+    "id": "client-r3-propose-after-simulate",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "6",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "client-r3-propose-after-simulate",
+      "input": {
+        "action_risk": "R3",
+        "attempted_mode": "propose",
+        "prior_simulation": true
+      },
+      "kind": "client_action_sequence",
+      "spec_section": "6"
+    }
+  },
+  {
+    "id": "client-r3-propose-without-simulate",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "6",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-SIMULATE-REQUIRED",
+        "verdict": "reject"
+      },
+      "id": "client-r3-propose-without-simulate",
+      "input": {
+        "action_risk": "R3",
+        "attempted_mode": "propose",
+        "prior_simulation": false
+      },
+      "kind": "client_action_sequence",
+      "spec_section": "6"
+    }
+  },
+  {
+    "id": "must-client-simulate-before-propose",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "6",
+    "vector": {
+      "id": "must-client-simulate-before-propose",
+      "section": "6",
+      "source_text": "- Clients (Kernel) MUST simulate before any R2/R3 propose, and MUST re-check the *simulation result* — not the model's belief — against the mandate.",
+      "vectors": [
+        "client-r3-propose-without-simulate",
+        "client-r3-propose-after-simulate"
+      ]
+    }
+  },
+  {
+    "id": "must-reject-simulate-divergence",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "6",
+    "vector": {
+      "id": "must-reject-simulate-divergence",
+      "section": "6",
+      "source_text": "- **Binding-ish honesty:** predictions are not offers. An Offer materially diverges from a simulation when, for the same canonical input within the simulation's `validity_window`, the offer's `resolved_effects` differ or its `total_cost` exceeds the simulated `total_cost`. Kernels MUST reject materially diverged offers (AJAR-SIMULATE-DIVERGED). Repeated material divergence constitutes misrepresentation (§8.4).",
+      "vectors": [
+        "offer-materially-diverged-from-simulation"
+      ]
+    }
+  },
+  {
+    "id": "must-simulate-equivalent-endpoints",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "6",
+    "vector": {
+      "id": "must-simulate-equivalent-endpoints",
+      "section": "6",
+      "source_text": "(Equivalently `.../simulate` sub-resource; both MUST behave identically.)",
+      "vectors": [
+        "simulate-endpoints-equivalent",
+        "simulate-endpoints-diverged"
+      ]
+    }
+  },
+  {
+    "id": "must-simulate-same-input",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "6",
+    "vector": {
+      "id": "must-simulate-same-input",
+      "section": "6",
+      "source_text": "Every action with `simulate: true` MUST accept the same input at:",
+      "vectors": [
+        "simulate-endpoints-equivalent",
+        "simulate-endpoints-diverged"
+      ]
+    }
+  },
+  {
+    "id": "offer-materially-diverged-from-simulation",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "6",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-SIMULATE-DIVERGED",
+        "verdict": "reject"
+      },
+      "id": "offer-materially-diverged-from-simulation",
+      "input": {
+        "offer_input_hash": "sha256:ticketInputHash001",
+        "offer_issued_at": "2026-07-20T10:03:00Z",
+        "offer_resolved_effects": [
+          {
+            "amount": "185000",
+            "currency": "INR",
+            "type": "financial.charge"
+          }
+        ],
+        "offer_total_cost": {
+          "amount": "185000",
+          "currency": "INR"
+        },
+        "simulation_input_hash": "sha256:ticketInputHash001",
+        "simulation_resolved_effects": [
+          {
+            "amount": "175000",
+            "currency": "INR",
+            "type": "financial.charge"
+          }
+        ],
+        "simulation_total_cost": {
+          "amount": "175000",
+          "currency": "INR"
+        },
+        "simulation_valid_until": "2026-07-20T10:05:00Z"
+      },
+      "kind": "simulation_offer_binding",
+      "spec_section": "6"
+    }
+  },
+  {
+    "id": "simulate-endpoints-diverged",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "6",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-SIMULATE-DIVERGED",
+        "verdict": "reject"
+      },
+      "id": "simulate-endpoints-diverged",
+      "input": {
+        "header_mode_hash": "sha256:simulationResultHash001",
+        "subresource_hash": "sha256:differentSimulationResultHash001"
+      },
+      "kind": "simulate_equivalence",
+      "spec_section": "6"
+    }
+  },
+  {
+    "id": "simulate-endpoints-equivalent",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "6",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "simulate-endpoints-equivalent",
+      "input": {
+        "header_mode_hash": "sha256:simulationResultHash001",
+        "subresource_hash": "sha256:simulationResultHash001"
+      },
+      "kind": "simulate_equivalence",
+      "spec_section": "6"
+    }
+  },
+  {
+    "id": "must-expired-offer-fail-closed",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "7",
+    "vector": {
+      "id": "must-expired-offer-fail-closed",
+      "section": "7",
+      "source_text": "3. Either side may **abort**; expired offers are void; commit of an expired/never-issued offer MUST fail closed.",
+      "vectors": [
+        "offer-expired-at-issue",
+        "offer-never-issued"
+      ]
+    }
+  },
+  {
+    "id": "must-offer-single-use-replay",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "7",
+    "vector": {
+      "id": "must-offer-single-use-replay",
+      "section": "7",
+      "source_text": "`{ ajar_version, type, offer_id, action_id, input_hash, resolved_effects, total_cost, issued_at, expires_at, single_use?, signature }` (freeze window: owner-configured, default 10 min). When `single_use` is true or omitted, committing the same `offer_id` twice MUST fail with AJAR-OFFER-REPLAY.",
+      "vectors": [
+        "offer-replay-single-use"
+      ]
+    }
+  },
+  {
+    "id": "offer-expired-at-issue",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "7",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-OFFER-EXPIRED",
+        "verdict": "reject"
+      },
+      "id": "offer-expired-at-issue",
+      "input": "../examples/invalid/expired-offer/offer.json",
+      "profile": "ACT",
+      "rule": "offer-expired-at-issue",
+      "schema": "offer.schema.json",
+      "spec_section": "7"
+    }
+  },
+  {
+    "id": "offer-never-issued",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "7",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-OFFER-NOT-FOUND",
+        "verdict": "reject"
+      },
+      "id": "offer-never-issued",
+      "input": {
+        "committed_offers": [],
+        "known_offers": [],
+        "offer_id": "urn:uuid:99999999-9999-4999-8999-999999999999"
+      },
+      "kind": "commit_offer_state",
+      "spec_section": "7"
+    }
+  },
+  {
+    "id": "offer-replay-single-use",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "7",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-OFFER-REPLAY",
+        "verdict": "reject"
+      },
+      "id": "offer-replay-single-use",
+      "input": {
+        "committed_offers": [
+          "urn:uuid:22222222-2222-4222-8222-222222222222"
+        ],
+        "known_offers": [
+          "urn:uuid:22222222-2222-4222-8222-222222222222"
+        ],
+        "offer_id": "urn:uuid:22222222-2222-4222-8222-222222222222",
+        "single_use": true
+      },
+      "kind": "commit_offer_state",
+      "spec_section": "7"
+    }
+  },
+  {
+    "id": "offer-valid",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "7",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "offer-valid",
+      "input": "../examples/scenario-tickets/offer.json",
+      "profile": "ACT",
+      "schema": "offer.schema.json",
+      "spec_section": "7"
+    }
+  },
+  {
+    "id": "mandate-cap-exceeded",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "context": {
+        "mandate": "../examples/invalid/over-cap-commit/mandate.json"
+      },
+      "expected": {
+        "error_code": "AJAR-MANDATE-CAP",
+        "verdict": "reject"
+      },
+      "id": "mandate-cap-exceeded",
+      "input": "../examples/invalid/over-cap-commit/offer.json",
+      "profile": "ACT",
+      "rule": "offer-exceeds-mandate-cap",
+      "schema": "offer.schema.json",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "mandate-missing-on-r2-action",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-MANDATE-MISSING",
+        "verdict": "reject"
+      },
+      "id": "mandate-missing-on-r2-action",
+      "input": {
+        "action_risk": "R2",
+        "mandate_present": false
+      },
+      "kind": "mandate_required",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "mandate-outside-validity-window",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-VERIFY-EXPIRED",
+        "verdict": "reject"
+      },
+      "id": "mandate-outside-validity-window",
+      "input": {
+        "now": "2026-08-01T00:00:00Z",
+        "revocation_fresh": true,
+        "revoked": false,
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z"
+      },
+      "kind": "mandate_status",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "mandate-revocation-status-stale",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-MANDATE-REVOKED",
+        "verdict": "reject"
+      },
+      "id": "mandate-revocation-status-stale",
+      "input": {
+        "now": "2026-07-20T10:00:00Z",
+        "revocation_fresh": false,
+        "revoked": false,
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z"
+      },
+      "kind": "mandate_status",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "mandate-revoked",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-MANDATE-REVOKED",
+        "verdict": "reject"
+      },
+      "id": "mandate-revoked",
+      "input": {
+        "now": "2026-07-20T10:00:00Z",
+        "revocation_fresh": true,
+        "revoked": true,
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z"
+      },
+      "kind": "mandate_status",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "mandate-valid-ticket-purchase",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "mandate-valid-ticket-purchase",
+      "input": "../examples/scenario-tickets/mandate.json",
+      "profile": "ACT",
+      "schema": "mandate.schema.json",
+      "spec_section": "8.1"
+    }
+  },
+  {
+    "id": "must-site-verify-mandate",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "8.1",
+    "vector": {
+      "follow_up": "Mandate signature cryptographic verification and domain matching need fuller harness coverage.",
+      "id": "must-site-verify-mandate",
+      "section": "8.1",
+      "source_text": "- Sites MUST verify: signature, validity window, scope ⊇ action requirement, caps ≥ resolved cost, revocation status. Revocation status may be cached up to `cached_ttl`; within that window a failed refresh MAY rely on the cache. With no cached status fresh within `cached_ttl`, the site MUST fail closed with AJAR-MANDATE-REVOKED.",
+      "vectors": [
+        "mandate-valid-ticket-purchase",
+        "mandate-missing-on-r2-action",
+        "mandate-cap-exceeded",
+        "mandate-revoked",
+        "mandate-revocation-status-stale",
+        "mandate-outside-validity-window",
+        "scope-exact-commerce-purchase",
+        "scope-wildcard-commerce-purchase-child",
+        "scope-wildcard-commerce-purchase-grandchild",
+        "scope-forbidden-exact-overrides-wildcard"
+      ]
+    }
+  },
+  {
+    "id": "scope-core-does-not-match-private",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-core-does-not-match-private",
+      "mandate_scopes": [
+        "commerce.purchase.*"
+      ],
+      "required_scope": "x-demo.purchase.priority"
+    }
+  },
+  {
+    "id": "scope-exact-commerce-purchase",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "allow",
+      "id": "scope-exact-commerce-purchase",
+      "mandate_scopes": [
+        "commerce.purchase.transport"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-forbidden-exact-overrides-wildcard",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "forbidden": [
+        "data.export.user"
+      ],
+      "id": "scope-forbidden-exact-overrides-wildcard",
+      "mandate_scopes": [
+        "data.export.*"
+      ],
+      "required_scope": "data.export.user"
+    }
+  },
+  {
+    "id": "scope-forbidden-wildcard-overrides-specific",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "forbidden": [
+        "commerce.purchase.*"
+      ],
+      "id": "scope-forbidden-wildcard-overrides-specific",
+      "mandate_scopes": [
+        "commerce.purchase.transport"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-invalid-middle-wildcard-denied",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-invalid-middle-wildcard-denied",
+      "mandate_scopes": [
+        "commerce.*.ticket"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-prefix-without-wildcard-denied",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-prefix-without-wildcard-denied",
+      "mandate_scopes": [
+        "commerce.purchase"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-private-does-not-match-core",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-private-does-not-match-core",
+      "mandate_scopes": [
+        "x-demo.purchase.*"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-private-matches-private",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "allow",
+      "id": "scope-private-matches-private",
+      "mandate_scopes": [
+        "x-demo.purchase.*"
+      ],
+      "required_scope": "x-demo.purchase.priority"
+    }
+  },
+  {
+    "id": "scope-sibling-denied",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-sibling-denied",
+      "mandate_scopes": [
+        "commerce.purchase.transport"
+      ],
+      "required_scope": "commerce.purchase.event"
+    }
+  },
+  {
+    "id": "scope-wildcard-commerce-purchase-child",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "allow",
+      "id": "scope-wildcard-commerce-purchase-child",
+      "mandate_scopes": [
+        "commerce.purchase.*"
+      ],
+      "required_scope": "commerce.purchase.transport"
+    }
+  },
+  {
+    "id": "scope-wildcard-commerce-purchase-grandchild",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "allow",
+      "id": "scope-wildcard-commerce-purchase-grandchild",
+      "mandate_scopes": [
+        "commerce.purchase.*"
+      ],
+      "required_scope": "commerce.purchase.transport.rail"
+    }
+  },
+  {
+    "id": "scope-wildcard-does-not-match-parent",
+    "kind": "scope-vectors",
+    "source_file": "test-vectors/scope-vectors.json",
+    "spec_section": "8.1",
+    "vector": {
+      "expected": "deny",
+      "id": "scope-wildcard-does-not-match-parent",
+      "mandate_scopes": [
+        "commerce.purchase.*"
+      ],
+      "required_scope": "commerce.purchase"
+    }
+  },
+  {
+    "id": "must-retain-receipts",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "8.2",
+    "vector": {
+      "id": "must-retain-receipts",
+      "section": "8.2",
+      "source_text": "Dual-signed record: `{ receipt_id, offer (embedded), mandate_hash, result_summary, executed_at, site_signature, agent_signature }`. Both parties MUST retain receipts (site: per policy retention; kernel: Receipt Vault). Receipts are the atoms of dispute resolution and regulatory audit.",
+      "vectors": [
+        "receipt-valid-ticket-purchase"
+      ]
+    }
+  },
+  {
+    "id": "receipt-valid-ticket-purchase",
+    "kind": "core-vectors",
+    "source_file": "test-vectors/core-vectors.json",
+    "spec_section": "8.2",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "receipt-valid-ticket-purchase",
+      "input": "../examples/scenario-tickets/receipt.json",
+      "profile": "ACT",
+      "schema": "receipt.schema.json",
+      "spec_section": "8.2"
+    }
+  },
+  {
+    "id": "fallback-r3-with-human",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "9",
+    "vector": {
+      "expected": {
+        "verdict": "accept"
+      },
+      "id": "fallback-r3-with-human",
+      "input": {
+        "derived_operation_risk": "R3",
+        "human_confirmation": true,
+        "manifest_present": false
+      },
+      "kind": "fallback_operation",
+      "spec_section": "9"
+    }
+  },
+  {
+    "id": "fallback-r3-without-human",
+    "kind": "runtime-vectors",
+    "source_file": "test-vectors/runtime-vectors.json",
+    "spec_section": "9",
+    "vector": {
+      "expected": {
+        "error_code": "AJAR-FALLBACK-HUMAN-REQUIRED",
+        "verdict": "reject"
+      },
+      "id": "fallback-r3-without-human",
+      "input": {
+        "derived_operation_risk": "R3",
+        "human_confirmation": false,
+        "manifest_present": false
+      },
+      "kind": "fallback_operation",
+      "spec_section": "9"
+    }
+  },
+  {
+    "id": "must-fallback-rules",
+    "kind": "must-coverage",
+    "source_file": "test-vectors/must-coverage.json",
+    "spec_section": "9",
+    "vector": {
+      "follow_up": "robots.txt/AIPREF, 402 honoring, signed self-identification, and unverified flagging are not yet vectored.",
+      "id": "must-fallback-rules",
+      "section": "9",
+      "source_text": "Clients MAY interact with non-Ajar sites via rendering/extraction, but MUST: honor robots.txt / AIPREF signals and 402 challenges; identify themselves via signed requests; flag all derived content `unverified`; and MUST NOT execute R2/R3-equivalent operations without explicit human confirmation per operation. Fallback is a transition path, not a peer mode.",
+      "vectors": [
+        "fallback-r3-without-human",
+        "fallback-r3-with-human"
+      ]
+    }
+  }
+]

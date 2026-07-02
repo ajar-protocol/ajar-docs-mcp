@@ -1,0 +1,393 @@
+{
+  "ajar_version": "0.1",
+  "vectors": [
+    {
+      "id": "http-manifest-well-known-location",
+      "spec_section": "2.1",
+      "kind": "http_surface",
+      "input": {
+        "method": "GET",
+        "path": "/.well-known/ajar.json",
+        "serves_manifest": true
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "http-manifest-wrong-location",
+      "spec_section": "2.1",
+      "kind": "http_surface",
+      "input": {
+        "method": "GET",
+        "path": "/ajar.json",
+        "serves_manifest": true
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-MANIFEST-LOCATION"
+      }
+    },
+    {
+      "id": "manifest-domain-binding-valid",
+      "spec_section": "2.2",
+      "kind": "domain_binding",
+      "input": {
+        "manifest_domain": "examplerail.example",
+        "request_domain": "examplerail.example",
+        "owner_key_present": true,
+        "proof": "dns-txt"
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "manifest-domain-binding-mismatch",
+      "spec_section": "2.2",
+      "kind": "domain_binding",
+      "input": {
+        "manifest_domain": "examplerail.example",
+        "request_domain": "attacker.example",
+        "owner_key_present": true,
+        "proof": "dns-txt"
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-VERIFY-DOMAIN-BINDING"
+      }
+    },
+    {
+      "id": "signature-kid-known",
+      "spec_section": "2.4",
+      "kind": "kid_resolution",
+      "input": {
+        "kid": "owner-2026",
+        "known_kids": ["owner-2026", "content-2026-07"]
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "signature-kid-unknown",
+      "spec_section": "2.4",
+      "kind": "kid_resolution",
+      "input": {
+        "kid": "unknown-2026",
+        "known_kids": ["owner-2026", "content-2026-07"]
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-VERIFY-UNKNOWN-KID"
+      }
+    },
+    {
+      "id": "client-r3-propose-without-simulate",
+      "spec_section": "6",
+      "kind": "client_action_sequence",
+      "input": {
+        "action_risk": "R3",
+        "attempted_mode": "propose",
+        "prior_simulation": false
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-SIMULATE-REQUIRED"
+      }
+    },
+    {
+      "id": "client-r3-propose-after-simulate",
+      "spec_section": "6",
+      "kind": "client_action_sequence",
+      "input": {
+        "action_risk": "R3",
+        "attempted_mode": "propose",
+        "prior_simulation": true
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "offer-never-issued",
+      "spec_section": "7",
+      "kind": "commit_offer_state",
+      "input": {
+        "offer_id": "urn:uuid:99999999-9999-4999-8999-999999999999",
+        "known_offers": [],
+        "committed_offers": []
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-OFFER-NOT-FOUND"
+      }
+    },
+    {
+      "id": "offer-replay-single-use",
+      "spec_section": "7",
+      "kind": "commit_offer_state",
+      "input": {
+        "offer_id": "urn:uuid:22222222-2222-4222-8222-222222222222",
+        "known_offers": ["urn:uuid:22222222-2222-4222-8222-222222222222"],
+        "committed_offers": ["urn:uuid:22222222-2222-4222-8222-222222222222"],
+        "single_use": true
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-OFFER-REPLAY"
+      }
+    },
+    {
+      "id": "mandate-missing-on-r2-action",
+      "spec_section": "8.1",
+      "kind": "mandate_required",
+      "input": {
+        "action_risk": "R2",
+        "mandate_present": false
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-MANDATE-MISSING"
+      }
+    },
+    {
+      "id": "mandate-revoked",
+      "spec_section": "8.1",
+      "kind": "mandate_status",
+      "input": {
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z",
+        "now": "2026-07-20T10:00:00Z",
+        "revoked": true,
+        "revocation_fresh": true
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-MANDATE-REVOKED"
+      }
+    },
+    {
+      "id": "mandate-revocation-status-stale",
+      "spec_section": "8.1",
+      "kind": "mandate_status",
+      "input": {
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z",
+        "now": "2026-07-20T10:00:00Z",
+        "revoked": false,
+        "revocation_fresh": false
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-MANDATE-REVOKED"
+      }
+    },
+    {
+      "id": "mandate-outside-validity-window",
+      "spec_section": "8.1",
+      "kind": "mandate_status",
+      "input": {
+        "valid_from": "2026-07-01T00:00:00Z",
+        "valid_until": "2026-07-31T23:59:59Z",
+        "now": "2026-08-01T00:00:00Z",
+        "revoked": false,
+        "revocation_fresh": true
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-VERIFY-EXPIRED"
+      }
+    },
+    {
+      "id": "simulate-endpoints-equivalent",
+      "spec_section": "6",
+      "kind": "simulate_equivalence",
+      "input": {
+        "header_mode_hash": "sha256:simulationResultHash001",
+        "subresource_hash": "sha256:simulationResultHash001"
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "simulate-endpoints-diverged",
+      "spec_section": "6",
+      "kind": "simulate_equivalence",
+      "input": {
+        "header_mode_hash": "sha256:simulationResultHash001",
+        "subresource_hash": "sha256:differentSimulationResultHash001"
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-SIMULATE-DIVERGED"
+      }
+    },
+    {
+      "id": "offer-materially-diverged-from-simulation",
+      "spec_section": "6",
+      "kind": "simulation_offer_binding",
+      "input": {
+        "simulation_input_hash": "sha256:ticketInputHash001",
+        "offer_input_hash": "sha256:ticketInputHash001",
+        "simulation_valid_until": "2026-07-20T10:05:00Z",
+        "offer_issued_at": "2026-07-20T10:03:00Z",
+        "simulation_resolved_effects": [
+          {
+            "type": "financial.charge",
+            "currency": "INR",
+            "amount": "175000"
+          }
+        ],
+        "offer_resolved_effects": [
+          {
+            "type": "financial.charge",
+            "currency": "INR",
+            "amount": "185000"
+          }
+        ],
+        "simulation_total_cost": {
+          "currency": "INR",
+          "amount": "175000"
+        },
+        "offer_total_cost": {
+          "currency": "INR",
+          "amount": "185000"
+        }
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-SIMULATE-DIVERGED"
+      }
+    },
+    {
+      "id": "view-chunks-provenance-tagged",
+      "spec_section": "4",
+      "kind": "view_provenance",
+      "input": {
+        "view": "examples/views/blog-home.view.json",
+        "origin": "https://notes.example",
+        "chunks": [
+          {
+            "id": "home.title",
+            "origin": "https://notes.example",
+            "inert": true
+          },
+          {
+            "id": "home.summary",
+            "origin": "https://notes.example",
+            "inert": true
+          }
+        ]
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "view-chunk-executable-rejected",
+      "spec_section": "4",
+      "kind": "view_provenance",
+      "input": {
+        "view": "examples/views/blog-home.view.json",
+        "origin": "https://notes.example",
+        "chunks": [
+          {
+            "id": "home.title",
+            "origin": "https://notes.example",
+            "inert": true
+          },
+          {
+            "id": "home.summary",
+            "origin": "https://notes.example",
+            "inert": false
+          }
+        ]
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-CLIENT-PROVENANCE"
+      }
+    },
+    {
+      "id": "breaking-change-major-bump",
+      "spec_section": "13",
+      "kind": "version_change",
+      "input": {
+        "change": "breaking",
+        "old_version": "0.1",
+        "new_version": "1.0"
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "breaking-change-without-major-bump",
+      "spec_section": "13",
+      "kind": "version_change",
+      "input": {
+        "change": "breaking",
+        "old_version": "0.1",
+        "new_version": "0.2"
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-VERSION-BREAKING"
+      }
+    },
+    {
+      "id": "public-extension-with-aep",
+      "spec_section": "13",
+      "kind": "aep_requirement",
+      "input": {
+        "affects_interoperability": true,
+        "aep_present": true
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    },
+    {
+      "id": "public-extension-without-aep",
+      "spec_section": "13",
+      "kind": "aep_requirement",
+      "input": {
+        "affects_interoperability": true,
+        "aep_present": false
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-AEP-REQUIRED"
+      }
+    },
+    {
+      "id": "fallback-r3-without-human",
+      "spec_section": "9",
+      "kind": "fallback_operation",
+      "input": {
+        "manifest_present": false,
+        "derived_operation_risk": "R3",
+        "human_confirmation": false
+      },
+      "expected": {
+        "verdict": "reject",
+        "error_code": "AJAR-FALLBACK-HUMAN-REQUIRED"
+      }
+    },
+    {
+      "id": "fallback-r3-with-human",
+      "spec_section": "9",
+      "kind": "fallback_operation",
+      "input": {
+        "manifest_present": false,
+        "derived_operation_risk": "R3",
+        "human_confirmation": true
+      },
+      "expected": {
+        "verdict": "accept"
+      }
+    }
+  ]
+}

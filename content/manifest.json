@@ -1,0 +1,326 @@
+{
+  "ajar_commit": "bad90bc4e51e1d041b8d7cbdeed250282245f0ba",
+  "ajar_version": "0.1",
+  "derive_timestamp": "2026-07-02T11:10:25.294Z",
+  "generated_by": "scripts/derive-content.ts",
+  "heading_id_rule": {
+    "documented_at": "docs/HEADING-IDS.md",
+    "examples": {
+      "## 5. Actions (Profile ACT)": "5-actions",
+      "### 5.1 Risk classes (normative taxonomy)": "5.1-risk-classes"
+    },
+    "summary": "Keep numeric prefix including dots; drop parenthetical tags; lowercase title; replace non-alphanumerics with hyphens; keep roughly first four title words."
+  },
+  "pinned_ajar_commit": "bad90bc4e51e1d041b8d7cbdeed250282245f0ba",
+  "resource_counts": {
+    "docs": 6,
+    "examples": 24,
+    "registries": 4,
+    "schemas": 10,
+    "spec_sections": 22,
+    "vectors": 89
+  },
+  "source_files": [
+    {
+      "bytes": 11592,
+      "content_path": "docs/architecture.md",
+      "source_path": "docs/02-ARCHITECTURE.md"
+    },
+    {
+      "bytes": 13834,
+      "content_path": "docs/decisions.md",
+      "source_path": "DECISIONS.md"
+    },
+    {
+      "bytes": 5965,
+      "content_path": "docs/glossary.md",
+      "source_path": "GLOSSARY.md"
+    },
+    {
+      "bytes": 7781,
+      "content_path": "docs/owner-control.md",
+      "source_path": "docs/05-OWNER-CONTROL.md"
+    },
+    {
+      "bytes": 14268,
+      "content_path": "docs/research.md",
+      "source_path": "docs/01-RESEARCH.md"
+    },
+    {
+      "bytes": 8749,
+      "content_path": "docs/security-model.md",
+      "source_path": "docs/04-SECURITY-MODEL.md"
+    },
+    {
+      "bytes": 262,
+      "content_path": "examples/errors/mandate-cap.problem.json",
+      "source_path": "examples/errors/mandate-cap.problem.json"
+    },
+    {
+      "bytes": 9178,
+      "content_path": "examples/implementer-manifests/mosskiln-reader-a.json",
+      "source_path": "examples/implementer-manifests/mosskiln-reader-a.json"
+    },
+    {
+      "bytes": 3481,
+      "content_path": "examples/implementer-manifests/service-desk-act.json",
+      "source_path": "examples/implementer-manifests/service-desk-act.json"
+    },
+    {
+      "bytes": 1884,
+      "content_path": "examples/implementer-manifests/static-knowledge-base.json",
+      "source_path": "examples/implementer-manifests/static-knowledge-base.json"
+    },
+    {
+      "bytes": 8430,
+      "content_path": "examples/implementer-manifests/thistledown-reader-b.json",
+      "source_path": "examples/implementer-manifests/thistledown-reader-b.json"
+    },
+    {
+      "bytes": 1087,
+      "content_path": "examples/invalid/bad-signature/manifest.json",
+      "source_path": "examples/invalid/bad-signature/manifest.json"
+    },
+    {
+      "bytes": 1096,
+      "content_path": "examples/invalid/expired-manifest/manifest.json",
+      "source_path": "examples/invalid/expired-manifest/manifest.json"
+    },
+    {
+      "bytes": 601,
+      "content_path": "examples/invalid/expired-offer/offer.json",
+      "source_path": "examples/invalid/expired-offer/offer.json"
+    },
+    {
+      "bytes": 2658,
+      "content_path": "examples/invalid/index.json",
+      "source_path": "examples/invalid/index.json"
+    },
+    {
+      "bytes": 1136,
+      "content_path": "examples/invalid/manifest-lifetime-over-180d/manifest.json",
+      "source_path": "examples/invalid/manifest-lifetime-over-180d/manifest.json"
+    },
+    {
+      "bytes": 1845,
+      "content_path": "examples/invalid/middle-wildcard-scope/manifest.json",
+      "source_path": "examples/invalid/middle-wildcard-scope/manifest.json"
+    },
+    {
+      "bytes": 1100,
+      "content_path": "examples/invalid/over-cap-commit/mandate.json",
+      "source_path": "examples/invalid/over-cap-commit/mandate.json"
+    },
+    {
+      "bytes": 596,
+      "content_path": "examples/invalid/over-cap-commit/offer.json",
+      "source_path": "examples/invalid/over-cap-commit/offer.json"
+    },
+    {
+      "bytes": 1729,
+      "content_path": "examples/invalid/risk-floor/manifest.json",
+      "source_path": "examples/invalid/risk-floor/manifest.json"
+    },
+    {
+      "bytes": 1106,
+      "content_path": "examples/invalid/sequence-rollback/current-manifest.json",
+      "source_path": "examples/invalid/sequence-rollback/current-manifest.json"
+    },
+    {
+      "bytes": 1589,
+      "content_path": "examples/manifests/blog-core.json",
+      "source_path": "examples/manifests/blog-core.json"
+    },
+    {
+      "bytes": 4722,
+      "content_path": "examples/manifests/commerce-core-act-pay.json",
+      "source_path": "examples/manifests/commerce-core-act-pay.json"
+    },
+    {
+      "bytes": 1862,
+      "content_path": "examples/manifests/docs-core-pay.json",
+      "source_path": "examples/manifests/docs-core-pay.json"
+    },
+    {
+      "bytes": 629,
+      "content_path": "examples/policies/default-owner-policy.json",
+      "source_path": "examples/policies/default-owner-policy.json"
+    },
+    {
+      "bytes": 1066,
+      "content_path": "examples/README.md",
+      "source_path": "examples/README.md"
+    },
+    {
+      "bytes": 1211,
+      "content_path": "examples/scenario-tickets/mandate.json",
+      "source_path": "examples/scenario-tickets/mandate.json"
+    },
+    {
+      "bytes": 709,
+      "content_path": "examples/scenario-tickets/offer.json",
+      "source_path": "examples/scenario-tickets/offer.json"
+    },
+    {
+      "bytes": 1403,
+      "content_path": "examples/scenario-tickets/receipt.json",
+      "source_path": "examples/scenario-tickets/receipt.json"
+    },
+    {
+      "bytes": 652,
+      "content_path": "examples/scenario-tickets/simulation.json",
+      "source_path": "examples/scenario-tickets/simulation.json"
+    },
+    {
+      "bytes": 715,
+      "content_path": "examples/views/blog-home.view.json",
+      "source_path": "examples/views/blog-home.view.json"
+    },
+    {
+      "bytes": 3526,
+      "content_path": "registries/error-codes.md",
+      "source_path": "registries/error-codes.md"
+    },
+    {
+      "bytes": 477,
+      "content_path": "registries/README.md",
+      "source_path": "registries/README.md"
+    },
+    {
+      "bytes": 3329,
+      "content_path": "registries/scopes.md",
+      "source_path": "registries/scopes.md"
+    },
+    {
+      "bytes": 1103,
+      "content_path": "registries/settlement-adapters.md",
+      "source_path": "registries/settlement-adapters.md"
+    },
+    {
+      "bytes": 2590,
+      "content_path": "schemas/action.schema.json",
+      "source_path": "schemas/action.schema.json"
+    },
+    {
+      "bytes": 2574,
+      "content_path": "schemas/common.schema.json",
+      "source_path": "schemas/common.schema.json"
+    },
+    {
+      "bytes": 769,
+      "content_path": "schemas/error.schema.json",
+      "source_path": "schemas/error.schema.json"
+    },
+    {
+      "bytes": 3161,
+      "content_path": "schemas/mandate.schema.json",
+      "source_path": "schemas/mandate.schema.json"
+    },
+    {
+      "bytes": 5852,
+      "content_path": "schemas/manifest.schema.json",
+      "source_path": "schemas/manifest.schema.json"
+    },
+    {
+      "bytes": 1286,
+      "content_path": "schemas/offer.schema.json",
+      "source_path": "schemas/offer.schema.json"
+    },
+    {
+      "bytes": 2078,
+      "content_path": "schemas/policy.schema.json",
+      "source_path": "schemas/policy.schema.json"
+    },
+    {
+      "bytes": 540,
+      "content_path": "schemas/README.md",
+      "source_path": "schemas/README.md"
+    },
+    {
+      "bytes": 1387,
+      "content_path": "schemas/receipt.schema.json",
+      "source_path": "schemas/receipt.schema.json"
+    },
+    {
+      "bytes": 1196,
+      "content_path": "schemas/simulation.schema.json",
+      "source_path": "schemas/simulation.schema.json"
+    },
+    {
+      "bytes": 1697,
+      "content_path": "schemas/view.schema.json",
+      "source_path": "schemas/view.schema.json"
+    },
+    {
+      "bytes": 18266,
+      "content_path": "search-index.json",
+      "source_path": "docs/03-PROTOCOL-SPEC.md"
+    },
+    {
+      "bytes": 18266,
+      "content_path": "spec/sections.json",
+      "source_path": "docs/03-PROTOCOL-SPEC.md"
+    },
+    {
+      "bytes": 0,
+      "content_path": "vectors/index.json",
+      "source_path": "test-vectors/*.json"
+    },
+    {
+      "bytes": 3616,
+      "content_path": "vectors/raw/core-vectors.json",
+      "source_path": "test-vectors/core-vectors.json"
+    },
+    {
+      "bytes": 8572,
+      "content_path": "vectors/raw/crypto-signing.json",
+      "source_path": "test-vectors/crypto-signing.json"
+    },
+    {
+      "bytes": 2004,
+      "content_path": "vectors/raw/extension-vectors.json",
+      "source_path": "test-vectors/extension-vectors.json"
+    },
+    {
+      "bytes": 245,
+      "content_path": "vectors/raw/http-request.json",
+      "source_path": "test-vectors/http-request.json"
+    },
+    {
+      "bytes": 1999,
+      "content_path": "vectors/raw/http-signature-vectors.json",
+      "source_path": "test-vectors/http-signature-vectors.json"
+    },
+    {
+      "bytes": 1539,
+      "content_path": "vectors/raw/manifest-check-vectors.json",
+      "source_path": "test-vectors/manifest-check-vectors.json"
+    },
+    {
+      "bytes": 10298,
+      "content_path": "vectors/raw/must-coverage.json",
+      "source_path": "test-vectors/must-coverage.json"
+    },
+    {
+      "bytes": 7954,
+      "content_path": "vectors/raw/must-coverage.md",
+      "source_path": "test-vectors/must-coverage.md"
+    },
+    {
+      "bytes": 1224,
+      "content_path": "vectors/raw/README.md",
+      "source_path": "test-vectors/README.md"
+    },
+    {
+      "bytes": 10066,
+      "content_path": "vectors/raw/runtime-vectors.json",
+      "source_path": "test-vectors/runtime-vectors.json"
+    },
+    {
+      "bytes": 2432,
+      "content_path": "vectors/raw/scope-vectors.json",
+      "source_path": "test-vectors/scope-vectors.json"
+    }
+  ],
+  "tool_version": "ajar-docs-mcp@0.1.0"
+}

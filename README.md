@@ -2,7 +2,7 @@
 
 An MCP server for the Ajar spec, schemas, examples, checklists, and conformance vectors. It lets a coding agent answer implementation questions from the repo instead of guessing from a copied prompt.
 
-Status: v0.1 buildable now. The spec baseline is frozen, so implementation can start against pinned `ajar` versions; see ADR-017.
+Status: v0.1 implemented (stdio). The spec baseline is frozen and served from generated content pinned to one `ajar` commit; see ADR-017.
 
 ---
 
@@ -36,7 +36,38 @@ Tools:
 
 Prompts: `implement-core-profile`, `author-first-manifest`, `add-simulate-to-action`, `review-my-policy`. These are parameterized starting prompts for common implementation tasks.
 
-## 3. Design rules
+## 3. Quickstart
+
+Dependencies are expected to be installed from `package-lock.json`.
+
+```bash
+npm run derive
+npm run build
+node dist/cli.js
+```
+
+Run the quality gates:
+
+```bash
+npx tsc --noEmit
+npm test
+npm run build
+```
+
+Local MCP client config for stdio:
+
+```json
+{
+  "mcpServers": {
+    "ajar-docs": {
+      "command": "node",
+      "args": ["/Users/ishita/projects/ajar-protocol/ajar-docs-mcp/dist/cli.js"]
+    }
+  }
+}
+```
+
+## 4. Design rules
 
 1. The spec repo is the source of truth. This server indexes `ajar` at pinned spec versions and reports the served `ajar_version` in every response.
 2. Stable addressing starts in the spec. Headings need stable IDs, each section should cover one concept, and MUST clauses must be citable. ADR-017 covers this.
@@ -44,7 +75,7 @@ Prompts: `implement-core-profile`, `author-first-manifest`, `add-simulate-to-act
 4. It must run locally and hosted: stdio for local coding agents, Streamable HTTP for hosted use, public spec content without auth, and no telemetry.
 5. Distribution includes an MCP Registry listing, short install docs for coding agents, and links from each repo's AGENTS.md.
 
-## 4. Backlog (converted to issues at Phase-0 exit)
+## 5. Backlog (converted to issues at Phase-0 exit)
 
 - D1: Section-ID extraction pipeline from the spec repo (build-time index; re-run on spec tags)
 - D2: Resource layer (spec/schema/example/registry/vector/doc)
@@ -56,7 +87,7 @@ Prompts: `implement-core-profile`, `author-first-manifest`, `add-simulate-to-act
 
 Definition of done for v0.1: a coding agent with only this MCP server and an empty Next.js repo produces a manifest and views that pass the conformance CORE suite. The run is recorded and published as Demo/Story 4.
 
-## 5. Relationship to other repos
+## 6. Relationship to other repos
 
 Reads: [`ajar`](https://github.com/ajar-protocol/ajar) for content and [`conformance`](https://github.com/ajar-protocol/conformance) for vectors. Feeds: contributors working in every integration repo. The same content will also be served over Ajar at ajarprotocol.org: MCP for coding agents in editors, Ajar Views for browsing agents.
 

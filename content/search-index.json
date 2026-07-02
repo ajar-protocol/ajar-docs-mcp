@@ -1,0 +1,6539 @@
+{
+  "document_count": 22,
+  "generated_by": "scripts/derive-content.ts",
+  "source_file": "docs/03-PROTOCOL-SPEC.md",
+  "tokens": {
+    "04": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "10": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "11": [
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      }
+    ],
+    "12": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "13": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "180": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "2.1": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 2
+      }
+    ],
+    "2.2": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      }
+    ],
+    "2.3": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      }
+    ],
+    "2.4": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "256": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "304": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "3339": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "402": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "4217": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "5.1": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      }
+    ],
+    "8.1": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      }
+    ],
+    "8.2": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 2
+      }
+    ],
+    "8.3": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "8.4": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "8785": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "9421": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "9457": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "abort": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "absent": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "accept": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "accepting": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "access": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "accountability": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "across": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "act": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      }
+    ],
+    "action": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "actions": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      }
+    ],
+    "adapter": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "adapters": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "add": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "adding": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "additions": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "adopt": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "advertise": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "advisory": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "aep": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "affect": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "against": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "agent": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "agents": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "aipref": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "ajar": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 5
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "ajar.json": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "all": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "allow": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "amount": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "an": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "and": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 7
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 8
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "anonymous": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "any": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "ap2": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "appear": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "appears": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "approval": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "are": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "artifact": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "artifacts": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "as": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 4
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "assign": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "at": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "atoms": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "auctions": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "audit": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "auth": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "authoritative": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "authority": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "base": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "base64url": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "be": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "bearing": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "because": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "before": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "behavior": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "belief": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "below": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "bind": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "binding": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "bootstrap": [
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "bot": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "both": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "breaking": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "browsers": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "bump": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "but": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "by": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "bytes": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      }
+    ],
+    "cached": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      }
+    ],
+    "canonical": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "canonicalization": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "canonicalized": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "capability": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 2
+      }
+    ],
+    "caps": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "caps.per": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "card": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "carries": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 3
+      }
+    ],
+    "cart": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "certified": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "challenge": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "challenges": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "change": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "changes": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "changing": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "check": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "checked": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "chunk": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 5
+      }
+    ],
+    "chunked": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "chunking": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "chunks": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "class": [
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "classes": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      }
+    ],
+    "client": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "clients": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "closed": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "commerce.purchase": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      }
+    ],
+    "commerce.purchase.transport": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "commerce.purchaseextra.x": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "commit": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 4
+      }
+    ],
+    "commits": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "committing": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "compatible": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "compliance": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      }
+    ],
+    "configured": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "confirmation": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "conformance": [
+      {
+        "section_id": "11-conformance",
+        "tf": 3
+      }
+    ],
+    "conforming": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "constitutes": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "constraints.forbidden": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "content": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "context": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "continue": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "contract": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "convention": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "core": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "correctly": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "cost": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 3
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      }
+    ],
+    "crawler": [
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "crypto": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "currency": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "data": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "date": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "day": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      }
+    ],
+    "days": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "decimal": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "decisions.md": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "declarations": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "declared": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "declares": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      }
+    ],
+    "default": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "defines": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "definition": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "delegated": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "delete": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "derived": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "design": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      }
+    ],
+    "deterministic": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "diff": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "diffs": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "digest": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "direct": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "directory": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "discovery": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      }
+    ],
+    "discretion": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "dispute": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "diverged": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      }
+    ],
+    "divergence": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "dns": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "does": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "domain": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      }
+    ],
+    "domains": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "draft": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "dual": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "durable": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "e.g": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "each": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "economics": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "ed25519": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "effect": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "effects": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "either": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "element": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "embedded": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "encode": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "endpoint": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "enforced": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "enforcement": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "entries": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "entry": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "equivalent": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "errors": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "every": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "exact": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "example": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "examples": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "executable": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "execute": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "executed": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "executes": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "execution": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      }
+    ],
+    "expired": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      }
+    ],
+    "expires": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "expiry": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "explicit": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "exposes": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "extensibility": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "extension": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 3
+      }
+    ],
+    "extensions": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "external": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "extraction": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "fail": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "failed": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "fallback": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 3
+      }
+    ],
+    "fed": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "fetch": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "fidelity": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "field": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "fields": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 3
+      }
+    ],
+    "filing": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "financial": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "first": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "flag": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "for": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "freeze": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "freshness": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "from": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "full": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "future": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "gateway": [
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      }
+    ],
+    "get": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "go": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "governance": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "half": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "hard": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "hardened": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "harness": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "has": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "hash": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "header": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "headers": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "history": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "hold": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "honest": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "honor": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "how": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "html": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "http": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 3
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "huge": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "human": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "id": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      }
+    ],
+    "idempotency": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "identify": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "identity": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      }
+    ],
+    "ids": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "iff": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "ignored": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "implementation": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "implements": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "in": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "include": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "included": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "inclusion": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "index": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "inert": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "inherently": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "input": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "insignificant": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "instructions": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "integrity": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "intent": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "interact": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "interaction": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "interoperability": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "interoperable": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "into": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "inventory": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "irreversible": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "is": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 5
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "iso": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "issued": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "it": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 3
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 3
+      }
+    ],
+    "its": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "itself": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "jcs": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "json": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "kept": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "kernel": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "kernels": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "key": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "keys": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 4
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "kid": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      }
+    ],
+    "known": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "last": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "leak": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "least": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "legal": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "less": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "level": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "lexicographically": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "liability": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "liable": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 4
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 4
+      }
+    ],
+    "library": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "lifetime": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "limits": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "link": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 2
+      }
+    ],
+    "live": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "locally": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "location": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 2
+      }
+    ],
+    "log": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "logs": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      }
+    ],
+    "lower": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "major": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "mandate": [
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 5
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 3
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 3
+      }
+    ],
+    "mandates": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      }
+    ],
+    "manifest": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 3
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 3
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 3
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 3
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "manifests": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "match": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "material": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "materially": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "may": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "meaning": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "message": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "metering": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "methods": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "middlebox": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "migration": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "min": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "minimum": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "misclassification": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "mismatch": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "misrepresentation": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "misrepresented": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "mode": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "model": [
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "money": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "move": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "must": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 5
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 3
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 4
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "negotiate": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "negotiated": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "negotiation": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "nested": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "never": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "new": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      }
+    ],
+    "no": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "nodes": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "non": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "none": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "normative": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "not": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "note": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "number": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "object": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 3
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 2
+      }
+    ],
+    "objects": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "of": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "offer": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 5
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 3
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "offers": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "offline": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "old": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "older": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "omitted": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "on": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "once": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "one": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "only": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "open": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "operation": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "operational": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "operations": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "operator": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "oprf": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "optional": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "options": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "oq": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 5
+      }
+    ],
+    "or": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "origin": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "outcomes": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "output": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "outside": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "over": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "overreach": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "own": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "owner": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 5
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "owners": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "padding": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "parent": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "part": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "partial": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "parties": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "path": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "patterns": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "pay": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "payment": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "payments": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "peer": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "per": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "period": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "phase": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      }
+    ],
+    "pipeline": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "plain": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "plus": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "points": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "policy": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "position": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "predicted": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "prefixes": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "preserving": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "price": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "primitive": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      }
+    ],
+    "principal": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "privacy": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "private": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "probabilistic": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "problem": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      }
+    ],
+    "process": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "producing": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "profile": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "profile.py": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "profiles": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      }
+    ],
+    "proof": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "properties": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "propose": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "protocol": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "provable": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "prove": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "provenance": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "proxy": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "psi": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "public": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      }
+    ],
+    "published": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "pull": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "purchase": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "pure": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "python": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "query": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "questions": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "quote": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "r0": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "r1": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "r2": [
+      {
+        "section_id": "5-actions",
+        "tf": 3
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 3
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "r3": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "races": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "rails": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "raise": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "re": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "read": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "receipt": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 3
+      }
+    ],
+    "receipts": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 2
+      }
+    ],
+    "receivers": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "record": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "reference": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "references": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "registries": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "registry": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "regrets": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "regulatory": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "rehearsal": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      }
+    ],
+    "reject": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "rel": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 2
+      }
+    ],
+    "relevant": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "remaining": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "removal": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "remove": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "rendering": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "renders": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "repeated": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "replay": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "repo": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "representation": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "reproduces": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "request": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "requests": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "require": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "required": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "requirements": [
+      {
+        "section_id": "5-actions",
+        "tf": 3
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 3
+      }
+    ],
+    "resolution": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "resolve": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "resolved": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      }
+    ],
+    "resources": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "response": [
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "responses": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "result": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "resulting": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "retain": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "retention": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "returns": [
+      {
+        "section_id": "4-views",
+        "tf": 3
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      }
+    ],
+    "revalidates": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "reverse": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "reversible": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "revocation": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      }
+    ],
+    "revocations": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "revoked": [
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "rfc": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "rich": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "ride": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "risk": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "robots.txt": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "root": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "rule": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "rules": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "safe": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "safety": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "same": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "schema": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 2
+      }
+    ],
+    "scope": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "scoped": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "scopes": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "scopes.md": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      }
+    ],
+    "search": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "seat": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "section": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "security": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "see": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "seed": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "seen": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "segment": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "semantic": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "semantics": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "semver": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "send": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "separator": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "sequence": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "serialize": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "serve": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "served": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "server": [
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "serves": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "settlement": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "sha": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "sharding": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "shifts": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "should": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "side": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "sign": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "signals": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "signature": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 5
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 4
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      }
+    ],
+    "signatures": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 5
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "signed": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 3
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "signer": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "signing": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 4
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "signing.json": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "simulate": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 5
+      }
+    ],
+    "simulation": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "site": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 5
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 4
+      }
+    ],
+    "sites": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 3
+      }
+    ],
+    "size": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "sorted": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "stable": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "stablecoin": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "staged": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "standalone": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "standard": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "state": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "status": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "store": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "streaming": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "string": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "sub": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "submit": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "such": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "summary": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ],
+    "support": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "surface": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      }
+    ],
+    "syntax": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "table": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "tag": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "taxonomy": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      }
+    ],
+    "test": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "than": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "that": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "the": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 5
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 6
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 4
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 11
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 11
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 6
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 2
+      }
+    ],
+    "their": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "them": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "themselves": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "these": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "they": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "this": [
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      }
+    ],
+    "through": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "tier": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "timestamp": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "tls": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "to": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 3
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 2
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "tools": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      }
+    ],
+    "total": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 3
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      }
+    ],
+    "tracked": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "transition": [
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "transmitted": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "transparency": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "transport": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "treat": [
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "true": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "trust": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "ttl": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 2
+      }
+    ],
+    "turn": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "twice": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "two": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "5-actions",
+        "tf": 1
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 2
+      }
+    ],
+    "txt": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "type": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "uncertain": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      }
+    ],
+    "under": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "understated": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "unknown": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "unless": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "until": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "untouched": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "url": [
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "use": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 3
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 2
+      }
+    ],
+    "used": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "uses": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      }
+    ],
+    "utf": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "valid": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "validation": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "validity": [
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      }
+    ],
+    "value": [
+      {
+        "section_id": "4-views",
+        "tf": 1
+      }
+    ],
+    "vault": [
+      {
+        "section_id": "8.2-receipt-object",
+        "tf": 1
+      }
+    ],
+    "vectors": [
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "vendor": [
+      {
+        "section_id": "8.3-payments-binding",
+        "tf": 1
+      }
+    ],
+    "verification": [
+      {
+        "section_id": "11-conformance",
+        "tf": 2
+      },
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "3-the-capability-manifest",
+        "tf": 1
+      }
+    ],
+    "verified": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "verifiers": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "verify": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 2
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 2
+      }
+    ],
+    "version": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 4
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "versioning": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "via": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 3
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 2
+      }
+    ],
+    "view": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 7
+      }
+    ],
+    "views": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      },
+      {
+        "section_id": "4-views",
+        "tf": 3
+      }
+    ],
+    "void": [
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "vs": [
+      {
+        "section_id": "12-open-questions",
+        "tf": 2
+      }
+    ],
+    "warnings": [
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      }
+    ],
+    "was": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "web": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      }
+    ],
+    "website": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "well": [
+      {
+        "section_id": "2-discovery-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.1-location",
+        "tf": 1
+      }
+    ],
+    "when": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "where": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "which": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 1
+      }
+    ],
+    "while": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "whitespace": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "will": [
+      {
+        "section_id": "11-conformance",
+        "tf": 1
+      }
+    ],
+    "window": [
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 1
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 2
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 1
+      }
+    ],
+    "with": [
+      {
+        "section_id": "1-scope-design-rules",
+        "tf": 2
+      },
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "12-open-questions",
+        "tf": 1
+      },
+      {
+        "section_id": "2.2-owner-keys",
+        "tf": 1
+      },
+      {
+        "section_id": "2.3-agent-identity",
+        "tf": 2
+      },
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 2
+      },
+      {
+        "section_id": "4-views",
+        "tf": 3
+      },
+      {
+        "section_id": "6-simulate-the-rehearsal-primitive",
+        "tf": 1
+      },
+      {
+        "section_id": "7-two-phase-execution-offer",
+        "tf": 3
+      },
+      {
+        "section_id": "8.1-mandate-object",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "within": [
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      },
+      {
+        "section_id": "8.4-liability-resolution",
+        "tf": 1
+      }
+    ],
+    "without": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      },
+      {
+        "section_id": "9-fallback-interaction",
+        "tf": 1
+      }
+    ],
+    "worked": [
+      {
+        "section_id": "2.4-canonicalization-and-signatures",
+        "tf": 1
+      }
+    ],
+    "would": [
+      {
+        "section_id": "13-version-and-extension-policy",
+        "tf": 1
+      }
+    ],
+    "write": [
+      {
+        "section_id": "5-actions",
+        "tf": 2
+      },
+      {
+        "section_id": "5.1-risk-classes",
+        "tf": 2
+      }
+    ],
+    "x402": [
+      {
+        "section_id": "10-http-surface-summary",
+        "tf": 1
+      },
+      {
+        "section_id": "8-mandates-receipts",
+        "tf": 1
+      }
+    ]
+  }
+}
