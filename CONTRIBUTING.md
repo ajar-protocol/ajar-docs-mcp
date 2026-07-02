@@ -1,6 +1,6 @@
 # Contributing to ajar-docs-mcp
 
-Start with the org-wide [CONTRIBUTING.md](https://github.com/ajar-protocol/.github/blob/main/CONTRIBUTING.md) and [AGENTS.md](https://github.com/ajar-protocol/.github/blob/main/AGENTS.md). They apply fully here.
+Start with the org-wide [CONTRIBUTING.md](https://github.com/ajar-protocol/.github/blob/main/CONTRIBUTING.md), org [AGENTS.md](https://github.com/ajar-protocol/.github/blob/main/AGENTS.md), and this repo's `AGENTS.md`, which is the binding Docs MCP architecture contract.
 
 This repo exposes the Ajar spec, schemas, examples, registries, and conformance vectors to coding agents. The v0.1 server is buildable now because the spec baseline is frozen.
 
