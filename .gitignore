@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+
+# TypeScript / Node
+node_modules/
+dist/
+coverage/
+.turbo/
+
+# Local config
+.env
+.env.*
