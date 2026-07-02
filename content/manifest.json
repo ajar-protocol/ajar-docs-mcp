@@ -1,7 +1,7 @@
 {
   "ajar_commit": "bad90bc4e51e1d041b8d7cbdeed250282245f0ba",
   "ajar_version": "0.1",
-  "derive_timestamp": "2026-07-02T11:10:25.294Z",
+  "derive_timestamp": "2026-07-02T11:11:56.722Z",
   "generated_by": "scripts/derive-content.ts",
   "heading_id_rule": {
     "documented_at": "docs/HEADING-IDS.md",

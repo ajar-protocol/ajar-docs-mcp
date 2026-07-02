@@ -2,7 +2,7 @@
 
 An MCP server for the Ajar spec, schemas, examples, checklists, and conformance vectors. It lets a coding agent answer implementation questions from the repo instead of guessing from a copied prompt.
 
-Status: v0.1 implemented (stdio). The spec baseline is frozen and served from generated content pinned to one `ajar` commit; see ADR-017.
+Status: v0.1 implemented (stdio). The spec baseline is frozen and served from generated content pinned to one `ajar` commit; see ADR-017. The v0.1 Definition of Done is met: see docs/STORY-4.md for the recorded agent run.
 
 ---
 
