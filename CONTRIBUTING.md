@@ -4,6 +4,8 @@ Start with the org-wide [CONTRIBUTING.md](https://github.com/ajar-protocol/.gith
 
 This repo exposes the Ajar spec, schemas, examples, registries, and conformance vectors to coding agents. The v0.1 server is buildable now because the spec baseline is frozen.
 
+Use the org-wide [TESTING.md](https://github.com/ajar-protocol/.github/blob/main/TESTING.md) for validation, fixture, and conformance-vector contribution rules.
+
 ## Wanted now
 
 - Deterministic indexing from the `ajar` spec repo at pinned versions.
